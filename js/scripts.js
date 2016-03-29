@@ -9,6 +9,7 @@ $(document).ready(function() {
           arraySplitString[index] = arraySplitString[index].replace(/a/gi,'-').replace(/e/gi, '-').replace(/i/gi,'-').replace(/o/gi, '-').replace(/u/gi, '-')
           var smurf = arraySplitString.join('')
           $('.output').text(smurf);
+          $('#sentence').hide();
         }
       }
   });
