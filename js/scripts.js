@@ -6,11 +6,7 @@ $(document).ready(function() {
 
       for (var index = 0; index <= arraySplitString.length; index += 1) {
         if (arraySplitString[index] === 'a', 'e', 'i', 'o', 'u') {
-          arraySplitString[index] = arraySplitString[index].replace(/a/gi,'-');
-          arraySplitString[index] = arraySplitString[index].replace(/e/gi,'-');
-          arraySplitString[index] = arraySplitString[index].replace(/i/gi,'-');
-          arraySplitString[index] = arraySplitString[index].replace(/o/gi,'-');
-          arraySplitString[index] = arraySplitString[index].replace(/u/gi,'-');
+          arraySplitString[index] = arraySplitString[index].replace(/a/gi,'-').replace(/e/gi, '-').replace(/i/gi,'-').replace(/o/gi, '-').replace(/u/gi, '-')
           var smurf = arraySplitString.join('')
           $('.output').text(smurf);
         }
